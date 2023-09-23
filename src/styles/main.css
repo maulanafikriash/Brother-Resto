@@ -55,6 +55,59 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
+/* ... Kode CSS sebelumnya ... */
+
+/* Styling untuk gambar dan latar belakang */
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.responsive-image {
+  max-width: 100%; /* Gambar tidak akan melebihi lebar kontainer */
+  height: auto; /* Gambar akan menyesuaikan tingginya sesuai aspek rasio */
+  display: block; /* Menghilangkan jarak bawah gambar yang disebabkan oleh elemen inline */
+  margin: 0 auto; /* Mengatur gambar ke tengah jika lebar gambar lebih kecil dari kontainer */
+}
+
+/* Styling untuk latar belakang teks */
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-overlay p {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+/* Efek gradient pada gambar */
+.image-with-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-with-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+  z-index: 1; /* Mengatur latar belakang di atas gambar */
+}
+
+/* ... Kode CSS setelahnya ... */
+
+
 section {
   padding: 40px 0;
 }
