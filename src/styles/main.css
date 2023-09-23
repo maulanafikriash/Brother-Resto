@@ -45,6 +45,16 @@ nav a {
   text-decoration: none;
 }
 
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s; 
+}
+
+nav ul li a:hover { 
+  font-weight: bold;
+}
+
 section {
   background-color: #fff;
   padding: 40px 0;
